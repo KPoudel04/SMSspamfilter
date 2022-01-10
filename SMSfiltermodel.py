@@ -1,21 +1,17 @@
 # All the imports
-import tensorflow as tf
 from PIL import Image
 import requests
 from io import BytesIO
-import pickle
 import streamlit as sl
 from keras_preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.text import Tokenizer
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding, GlobalAveragePooling1D, Dense, Dropout, LSTM, Bidirectional
+from tensorflow.keras.layers import Embedding, GlobalAveragePooling1D, Dense, Dropout
 
 # Download the UCI datasets
 url = 'https://raw.githubusercontent.com/ShresthaSudip/SMS_Spam_Detection_DNN_LSTM_BiLSTM/master/SMSSpamCollection'
