@@ -136,7 +136,7 @@ def predict_spam(predict_msg):
 
 #model.save('SMSspamfilter.h5')
 sl.header("Developed by Kiran Poudel")
-text = sl.text_input("Enter Something", "")
+text = sl.text_input("Enter your message", "")
 Result_text = "Please type something in to test the spam filter"
 Result = sl.markdown(f'<h1 style="color:#07080a;font-size:24px;">{(Result_text)}</h1>',
                      unsafe_allow_html=True)
