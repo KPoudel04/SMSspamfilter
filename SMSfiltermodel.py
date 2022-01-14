@@ -18,8 +18,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, GlobalAveragePooling1D, Dense, Dropout
 
 # Download the UCI datasets
-url = 'https://raw.githubusercontent.com/ShresthaSudip/SMS_Spam_Detection_DNN_LSTM_BiLSTM/master/SMSSpamCollection'
-messages = pd.read_csv(url, sep ='\t',names=["label", "message"])
+dataSet = './SMSSpamCollection'
+messages = pd.read_csv(dataSet, sep ='\t',names=["label", "message"])
 print(messages[:3])
 
 # Visualize the data
